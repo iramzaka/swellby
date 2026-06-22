@@ -2,7 +2,7 @@ import { createReadStream, existsSync, statSync } from "node:fs";
 import { createServer } from "node:http";
 import { extname, join, normalize, resolve } from "node:path";
 
-const root = resolve(".");
+const root = existsSync(resolve("dist/index.html")) ? resolve("dist") : resolve(".");
 const port = Number(process.env.PORT || 3000);
 
 const mimeTypes = {
