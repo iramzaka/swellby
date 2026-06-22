@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "esbuild src/main.jsx --bundle --outfile=app.bundle.js --format=iife",
+    "dev": "node dev.mjs",
     "start": "npm run build && node server.mjs"
   },
   "dependencies": {
