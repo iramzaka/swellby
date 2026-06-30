@@ -5,7 +5,7 @@ export default function MarketplaceSection() {
 <section className="marketplace-section" id="marketplace" aria-labelledby="marketplace-title">
         
         <h2 id="marketplace-title">
-          The Marketplace is the tool <span>coordinators need</span>
+          Referrals Marketplace<br /><span>The Marketplace is the tool coordinators need</span>
         </h2>
         <p className="section-copy">
           Whether you're a service coordinator sharing cases, or a staffing coordinator receiving them,

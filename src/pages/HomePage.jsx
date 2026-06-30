@@ -5,6 +5,7 @@ import {
   HeroSection,
   JoinSection,
   MarketplaceSection,
+  ServiceCoordinationSection,
   SessionNotesSection,
   TestimonialsSection,
 } from "../sections/index.js";
@@ -13,9 +14,10 @@ export default function HomePage() {
   return (
     <main id="home">
       <HeroSection />
-      <MarketplaceSection />
       <SessionNotesSection />
+      <ServiceCoordinationSection />
       <TestimonialsSection />
+      <MarketplaceSection />
       <GrowthStackSection />
       <DirectorySection />
       <JoinSection />

@@ -6,7 +6,7 @@ export default function SessionNotesSection() {
         <div className="notes-content">
           
           <h2 id="notes-title">
-            Digital session notes for <span>early intervention</span>
+            Case Management <br /><span>Digital Session Notes and Electronic Billing</span>
           </h2>
           <p className="notes-lead">
             Therapists quickly create, sign, and submit error-free session notes from any phone or
@@ -58,7 +58,7 @@ export default function SessionNotesSection() {
           </div>
 
           <a className="btn btn-primary btn-large notes-button" href="#signup" data-scroll="true">
-            Learn More
+            Request Demo
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5 12h14" />
               <path d="m13 5 7 7-7 7" />

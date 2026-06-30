@@ -14,6 +14,7 @@ const joinOptions = [
     image: "assets/join-therapist-modern.png",
     alt: "Therapist using the Swellby digital session notes app",
     theme: "blue",
+    number: "01",
   },
   {
     title: (
@@ -28,6 +29,7 @@ const joinOptions = [
     image: "assets/join-staffer-modern.png",
     alt: "Agency staff member using Swellby",
     theme: "orange",
+    number: "02",
   },
   {
     title: (
@@ -42,6 +44,7 @@ const joinOptions = [
     image: "assets/join-agency-modern.png",
     alt: "Agency joining Swellby",
     theme: "green",
+    number: "03",
   },
 ];
 
@@ -50,16 +53,16 @@ export default function JoinPage() {
     <main className="join-page" id="join-page">
       <section className="join-choice-section" aria-labelledby="join-choice-title">
 
-
         <h1 id="join-choice-title">
-          Which best describes
-          <span>how you wish to join?</span>
+          Which best describes <span>how you wish to join?</span>
         </h1>
+        <p className="join-choice-copy">Choose the option that fits you best. We&apos;ll guide you from there.</p>
         <span className="join-choice-rule" aria-hidden="true"></span>
 
         <div className="join-choice-grid">
           {joinOptions.map((option) => (
             <article className={`join-choice-card join-choice-card-${option.theme}`} key={option.image}>
+              <span className="join-choice-number" aria-hidden="true">{option.number}</span>
               <img src={option.image} alt={option.alt} />
               <h2>{option.title}</h2>
               <span className="join-choice-arrow" aria-hidden="true">

@@ -14,8 +14,8 @@ export default function Header() {
       </button>
 
       <nav className="site-nav" aria-label="Primary navigation" data-nav="true">
-        <a href="#session-notes" data-scroll="true">Session Notes App</a>
-        <a href="#pricing" data-scroll="true">Pricing</a>
+        <a href="#/notes-app">Session Notes App</a>
+        <a href="#/pricing">Pricing</a>
         <span className="nav-divider" aria-hidden="true"></span>
         <a className="btn btn-outline" href="#login" data-scroll="true">Log In</a>
         <a className="btn btn-primary" href="#/join">Sign Up</a>
