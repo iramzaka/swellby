@@ -57,15 +57,15 @@ export default function PricingPage() {
 
       <section className="notes-pricing-section" aria-labelledby="notes-pricing-title">
         <div className="notes-pricing-content">
-          <span className="pricing-kicker">
+          {/* <span className="pricing-kicker">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="3" y="8" width="18" height="13" rx="2" />
               <path d="M12 8v13M3 12h18M8.5 8C6 8 6 4 8 4c2.5 0 4 4 4 4M15.5 8C18 8 18 4 16 4c-2.5 0-4 4-4 4" />
             </svg>
             FREE TO TRY
-          </span>
+          </span> */}
 
-          <h2 id="notes-pricing-title">The Swellby<br />Session Notes app<br />is <span>free to try!</span></h2>
+          <h2 id="notes-pricing-title">The Swellby Session Notes app is <span>free to try!</span></h2>
           <p className="notes-pricing-intro">
             We&apos;re flexible! Only pay for what you use.<br />
             Or call for a flat monthly rate!

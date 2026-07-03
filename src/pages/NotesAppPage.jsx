@@ -114,7 +114,7 @@ export default function NotesAppPage() {
         </div>
 
         <div className="notes-app-visual">
-          <img src="assets/notes-app-hero-reference.png" alt="Swellby Session Notes app displayed on two mobile phones with a parent and child" />
+          <img src="assets/notes-app-hero-reference1.png" alt="Swellby Session Notes app displayed on two mobile phones with a parent and child" />
         </div>
       </section>
 
