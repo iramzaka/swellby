@@ -21,33 +21,31 @@ const notesFeatures = [
 const notesBenefits = [
   {
     number: "01",
-    title: <><span>A great tool</span><br />for agencies</>,
+    title: <><span>A great tool </span>for agencies</>,
     copy: "Whether you have 5 or 500 therapists, Swellby lets you organize every note in one simple place. When providers complete a session, the note is shared instantly with your team. Automatic NYEIS bulk batch billing, pre-populated client information, and a caseload-positive app for your team makes growing your business easier than ever.",
     visualLabel: "Therapist working on a laptop while seated inside a clock",
     icon: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>,
   },
   {
     number: "02",
-    title: <>An amazing app for<br /><span>therapists working in EI</span></>,
+    title: <><span>An amazing app </span>for therapists working in EI</>,
     copy: "Swellby was designed by therapists, for therapists. Therapists who use our app often save up to 3 hours a week doing paperwork. Create, sign, and submit new notes in under 2 minutes without any end-of-week admin work. Best part yet, we've seen providers who use Swellby fill up their saved time with more cases!",
     visualLabel: "Parent lifting a young child",
     icon: <><rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" /></>,
-    reverse: true,
   },
   {
     number: "03",
-    title: <><span>Better than</span><br />paper notes</>,
+    title: <><span>Better than </span>paper notes</>,
     copy: "Stop lugging around the binder. Swellby works on any phone or tablet and keeps your session notes private and more secure than any plastic briefcase. Agencies and individual providers can access existing notes anytime, as well as print NYS EI notes for their records with ease. It's faster, safer, and more organized than paper. Period.",
     visualLabel: "Digital session notes replacing paper binders",
     icon: <><path d="M4 20v-7h4v7M10 20V8h4v12M16 20V4h4v16" /></>,
   },
   {
     number: "04",
-    title: <>A business boomer for<br /><span>agencies and therapists</span></>,
+    title: <><span>A business boomer </span>for agencies and therapists</>,
     copy: "Swellby is built to help therapists spend less time doing paperwork and more time seeing clients. For agencies and therapists alike, that means growing your business. Even for businesses who use case management software, Swellby is a business-boosting add on like nothing else in the market.",
     visualLabel: "Growing business chart with a professional",
     icon: <><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 12h18" /></>,
-    reverse: true,
   },
 ];
 
@@ -118,7 +116,7 @@ export default function NotesAppPage() {
         </div>
       </section>
 
-      <section className="notes-impact-section" aria-label="Swellby Notes results">
+       <section className="notes-impact-section" aria-label="Swellby Notes results">
         <div className="notes-impact-grid">
           <article>
             <span className="notes-impact-icon" aria-hidden="true">
@@ -155,15 +153,16 @@ export default function NotesAppPage() {
 
         <div className="notes-benefits-list">
           {notesBenefits.map((benefit) => (
-            <article className={`notes-benefit-row${benefit.reverse ? " notes-benefit-reverse" : ""}`} key={benefit.number}>
+            <article className="notes-benefit-row" key={benefit.number}>
               <div className="notes-benefit-copy">
                 <div className="notes-benefit-meta">
                   <span className="notes-benefit-number">{benefit.number}</span>
-                  <span className="notes-benefit-icon" aria-hidden="true">
+                  {/* <span className="notes-benefit-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24">{benefit.icon}</svg>
-                  </span>
+                  </span> */}
+                  <h3>{benefit.title}</h3>
                 </div>
-                <h3>{benefit.title}</h3>
+
                 <p>{benefit.copy}</p>
               </div>
               <div
@@ -175,6 +174,8 @@ export default function NotesAppPage() {
           ))}
         </div>
       </section>
+
+
 
       <section className="notes-testimonial-section" aria-label="Therapist testimonial">
         <div className="notes-testimonial-inner">
@@ -194,7 +195,7 @@ export default function NotesAppPage() {
         <div className="telehealth-content">
 
           <h2 id="telehealth-title">Telehealth <span>ready</span></h2>
-          <span className="telehealth-rule" aria-hidden="true"></span>
+          {/* <span className="telehealth-rule" aria-hidden="true"></span> */}
           <p className="telehealth-copy">
             Swellby notes have integrated simple COVID-19 emergency declaration language to help therapists quickly
             create session notes delivered using Teletherapy. Swellby delivers the same time-cutting, cost-saving,
@@ -223,7 +224,7 @@ export default function NotesAppPage() {
       <section className="notes-try-section" aria-labelledby="notes-try-title">
         <header className="notes-try-header">
           <h2 id="notes-try-title">Ready to give it a try?</h2>
-          <span aria-hidden="true"></span>
+          {/* <span aria-hidden="true"></span> */}
         </header>
 
         <div className="notes-try-grid">
@@ -231,7 +232,7 @@ export default function NotesAppPage() {
             <div className="notes-try-visual notes-try-visual-agency" role="img" aria-label="Agency building illustration"></div>
             <div className="notes-try-copy">
               <h3>Agencies</h3>
-              <span className="notes-try-rule" aria-hidden="true"></span>
+              {/* <span className="notes-try-rule" aria-hidden="true"></span> */}
               <p>
                 Agencies can set up a free demo and try it risk free without disrupting what you already do. Reach out
                 to get access to the admin dashboard demo and agency-centered provider app.
@@ -247,7 +248,7 @@ export default function NotesAppPage() {
             <div className="notes-try-visual notes-try-visual-therapist" role="img" aria-label="Individual therapist illustration"></div>
             <div className="notes-try-copy">
               <h3>Individual Therapists</h3>
-              <span className="notes-try-rule" aria-hidden="true"></span>
+              {/* <span className="notes-try-rule" aria-hidden="true"></span> */}
               <p>
                 Individual therapists who are approved to bill NYEIS directly can start using Swellby today! Try it
                 risk free for 14 days to see if it&apos;s right for you.
@@ -260,7 +261,7 @@ export default function NotesAppPage() {
             <div className="notes-try-visual notes-try-visual-phone" role="img" aria-label="Swellby Session Notes mobile app"></div>
             <div className="notes-try-copy">
               <h3>Just a W2 or 1099 therapist?</h3>
-              <span className="notes-try-rule" aria-hidden="true"></span>
+              {/* <span className="notes-try-rule" aria-hidden="true"></span> */}
               <p>
                 We love getting feedback from therapists! Download the app and create a mock-case to see how it works!
                 If you want your agency to use it, let us know! (Over half of our agencies join from therapist requests!)
