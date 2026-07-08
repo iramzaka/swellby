@@ -21,6 +21,43 @@ const plans = [
   },
 ];
 
+const caseManagementFeatures = [
+  {
+    title: "No Setup Fees",
+    icon: <><circle cx="12" cy="12" r="8" /><path d="M12 8v8M15 10.5c0-1.2-1.2-2.2-3-2.2s-3 .9-3 2.1c0 3.2 6 1.4 6 4.6 0 1.2-1.2 2.1-3 2.1s-3-.9-3-2.2" /></>,
+    theme: "blue",
+  },
+  {
+    title: "No Long-Term Contract",
+    icon: <><rect x="4" y="5" width="16" height="14" rx="2" /><path d="M8 10h8M8 14h5" /></>,
+    theme: "green",
+  },
+  {
+    title: "Only pay for what you use",
+    icon: <><path d="M4 20V10" /><path d="M10 20V6" /><path d="M16 20v-8" /><path d="M2 20h20" /></>,
+    theme: "purple",
+  },
+];
+
+const serviceCoordinationFeatures = [
+  {
+    title: "No Setup Fees",
+    icon: <><circle cx="12" cy="12" r="8" /><path d="M12 8v8M15 10.5c0-1.2-1.2-2.2-3-2.2s-3 .9-3 2.1c0 3.2 6 1.4 6 4.6 0 1.2-1.2 2.1-3 2.1s-3-.9-3-2.2" /></>,
+    theme: "blue",
+  },
+  {
+    title: "No Long-Term Contract",
+    icon: <><path d="M6 4h12v16H6z" /><path d="M9 9h6M9 13h4" /><path d="m14 18 2 2 4-5" /></>,
+    theme: "green",
+  },
+  {
+    title: "Base rate of only $250/mo",
+    copy: "if more than 5 SCs, we charge $50/SC/mo",
+    icon: <><path d="M4 7h16v10H4z" /><circle cx="12" cy="12" r="2.5" /><path d="M7 10v4M17 10v4" /></>,
+    theme: "blue",
+  },
+];
+
 export default function PricingPage() {
   return (
     <main className="pricing-page" id="pricing-page">
@@ -57,49 +94,57 @@ export default function PricingPage() {
 
       <section className="notes-pricing-section" aria-labelledby="notes-pricing-title">
         <div className="notes-pricing-content">
-          {/* <span className="pricing-kicker">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="8" width="18" height="13" rx="2" />
-              <path d="M12 8v13M3 12h18M8.5 8C6 8 6 4 8 4c2.5 0 4 4 4 4M15.5 8C18 8 18 4 16 4c-2.5 0-4 4-4 4" />
-            </svg>
-            FREE TO TRY
-          </span> */}
-
-          <h2 id="notes-pricing-title">The Swellby Session Notes app is <span>free to try!</span></h2>
-          <p className="notes-pricing-intro">
-            We&apos;re flexible! Only pay for what you use.<br />
-            Or call for a flat monthly rate!
-          </p>
+          <h2 id="notes-pricing-title">Case Management</h2>
+          <p className="notes-pricing-subtitle">Digital Session Notes and Electronic Billing</p>
 
           <div className="notes-pricing-features">
-            <article>
-              <span className="notes-pricing-feature-icon notes-pricing-feature-blue" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 7v10M15 9.5c0-1.4-1.3-2.5-3-2.5s-3 1-3 2.4c0 3.6 6 1.6 6 5.2 0 1.4-1.3 2.4-3 2.4s-3-1.1-3-2.5" /></svg>
-              </span>
-              <div><h3>No monthly fees</h3><p>Zero hidden costs.</p></div>
-            </article>
-            <article>
-              <span className="notes-pricing-feature-icon notes-pricing-feature-green" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2" /><path d="M3 10h18M16 14h2" /></svg>
-              </span>
-              <div><h3>Pay for what you use</h3><p>Flexible pricing that works for you.</p></div>
-            </article>
-            <article>
-              <span className="notes-pricing-feature-icon notes-pricing-feature-purple" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" /></svg>
-              </span>
-              <div><h3>Flat monthly rate</h3><p>Call us for enterprise pricing.</p></div>
-            </article>
+            {caseManagementFeatures.map((feature) => (
+              <article key={feature.title}>
+                <span className={`notes-pricing-feature-icon notes-pricing-feature-${feature.theme}`} aria-hidden="true">
+                  <svg viewBox="0 0 24 24">{feature.icon}</svg>
+                </span>
+                <div>
+                  <h3>{feature.title}</h3>
+                  {feature.copy ? <p>{feature.copy}</p> : null}
+                </div>
+              </article>
+            ))}
           </div>
 
-          <div className="notes-pricing-trust">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /><path d="m9 12 2 2 4-4" /></svg>
-            <strong>Trusted by agencies.<br />Built for professionals.</strong>
-          </div>
+          <p className="notes-pricing-rate">
+            Base rate is only $150/mo for up to 300 notes (or $0.50/note)<br />
+            - Optional Doc Storage, Sharing, and Signing: $50/mo<br />
+            - Optional Electronic Billing: $50/mo
+          </p>
         </div>
 
         <div className="notes-pricing-visual">
           <img src="assets/session-notes-app.png" alt="Swellby Session Notes app shown on three phones" />
+        </div>
+      </section>
+
+      <section className="notes-pricing-section service-pricing-section" aria-labelledby="service-pricing-title">
+        <div className="notes-pricing-visual service-pricing-visual">
+          <img src="assets/service-coordination-laptop.png" alt="Swellby service coordination notes dashboard on a laptop" />
+        </div>
+
+        <div className="notes-pricing-content">
+          <h2 id="service-pricing-title">Service Coordination Notes</h2>
+          <p className="notes-pricing-subtitle">SC Notes and Electronic Billing</p>
+
+          <div className="notes-pricing-features">
+            {serviceCoordinationFeatures.map((feature) => (
+              <article key={feature.title}>
+                <span className={`notes-pricing-feature-icon notes-pricing-feature-${feature.theme}`} aria-hidden="true">
+                  <svg viewBox="0 0 24 24">{feature.icon}</svg>
+                </span>
+                <div>
+                  <h3>{feature.title}</h3>
+                  {feature.copy ? <p>{feature.copy}</p> : null}
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </main>

@@ -12,7 +12,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="hero-copy">
-            Empowering Early Intervention Agencies Across New York.Powerful, Easy-to-Use, Affordable.
+            Empowering Early Intervention Agencies Across New York. <br />Powerful, Easy-to-Use, Affordable.
 
           </p>
 
