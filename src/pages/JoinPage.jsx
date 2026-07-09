@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const joinOptions = [
   {
@@ -15,6 +15,11 @@ const joinOptions = [
     alt: "Therapist using the Swellby digital session notes app",
     theme: "blue",
     number: "01",
+    modal: {
+      title: "Get Session Notes App",
+      message:
+        "First, your agency needs to send you an invitation to use the app. Then go to the Apple App Store or Google Play Store on your mobile device and download the Session Notes app.",
+    },
   },
   {
     title: (
@@ -30,6 +35,11 @@ const joinOptions = [
     alt: "Agency staff member using Swellby",
     theme: "orange",
     number: "02",
+    modal: {
+      title: "Join Existing Agency",
+      message:
+        "Find a Swellby Admin at your agency (usually an owner or manager) and ask them to go to Settings and send you an invitation.",
+    },
   },
   {
     title: (
@@ -45,10 +55,29 @@ const joinOptions = [
     alt: "Agency joining Swellby",
     theme: "green",
     number: "03",
+    href: "#/initiation",
   },
 ];
 
 export default function JoinPage() {
+  const [activeModal, setActiveModal] = useState(null);
+
+  useEffect(() => {
+    if (!activeModal) return undefined;
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") setActiveModal(null);
+    };
+
+    document.body.classList.add("modal-open");
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.classList.remove("modal-open");
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [activeModal]);
+
   return (
     <main className="join-page" id="join-page">
       <section className="join-choice-section" aria-labelledby="join-choice-title">
@@ -61,20 +90,92 @@ export default function JoinPage() {
 
         <div className="join-choice-grid">
           {joinOptions.map((option) => (
-            <article className={`join-choice-card join-choice-card-${option.theme}`} key={option.image}>
-              <span className="join-choice-number" aria-hidden="true">{option.number}</span>
-              <img src={option.image} alt={option.alt} />
-              <h2>{option.title}</h2>
-              <span className="join-choice-arrow" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M5 12h14" />
-                  <path d="m13 5 7 7-7 7" />
-                </svg>
-              </span>
+            <article className={`join-choice-card join-choice-card-${option.theme}${option.modal || option.href ? " join-choice-card-clickable" : ""}`} key={option.image}>
+              {/* <span className="join-choice-number" aria-hidden="true">{option.number}</span> */}
+              {option.modal ? (
+                <button
+                  className="join-choice-card-action"
+                  type="button"
+                  onClick={() => setActiveModal(option.modal)}
+                  aria-haspopup="dialog"
+                >
+                  <img src={option.image} alt={option.alt} />
+                  <h2>{option.title}</h2>
+                  <span className="join-choice-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M5 12h14" />
+                      <path d="m13 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                </button>
+              ) : option.href ? (
+                <a className="join-choice-card-action" href={option.href}>
+                  <img src={option.image} alt={option.alt} />
+                  <h2>{option.title}</h2>
+                  <span className="join-choice-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M5 12h14" />
+                      <path d="m13 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                </a>
+              ) : (
+                <>
+                  <img src={option.image} alt={option.alt} />
+                  <h2>{option.title}</h2>
+                  <span className="join-choice-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M5 12h14" />
+                      <path d="m13 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                </>
+              )}
             </article>
           ))}
         </div>
       </section>
+
+      {activeModal ? (
+        <div className="join-modal-backdrop" role="presentation" onMouseDown={() => setActiveModal(null)}>
+          <div
+            className="join-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="alertTitle"
+            aria-describedby="alertMessage"
+            onMouseDown={(event) => event.stopPropagation()}
+          >
+            <button className="join-modal-close" type="button" onClick={() => setActiveModal(null)} aria-label="Close dialog">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6l12 12" />
+                <path d="M18 6 6 18" />
+              </svg>
+            </button>
+
+            <div className="modalContentsWrapper">
+              <div className="formBody">
+                <span className="join-modal-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  </svg>
+                </span>
+                <div id="alertTitle" className="formRow fSizeXXL fColorSWBlue">{activeModal.title}</div>
+                <div id="alertMessage" className="formRow">
+                  {activeModal.message}
+                </div>
+                <div className="formRowSubmit">
+                  <button id="modalInfoOkButton" type="button" className="globalButtonStyle medium right modal-close modal-ok" onClick={() => setActiveModal(null)}>
+                    Ok
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </main>
   );
 }

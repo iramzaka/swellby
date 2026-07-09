@@ -1,0 +1,6 @@
+Swellby HIPAA STATEMENT
+In connection with its Swellby on-line case referral software, Swellby INC ("Swellby") acts in full compliance with the applicable provisions of the HIPAA Privacy Law and Security Rule. As a Business Associate of Enrolled Users, Swellby may have access to Protected Health Information ("PHI"). In compliance with HIPAA, Swellby is legally and contractually obligated only to use or disclose PHI to the extent that such use or disclosure is consistent with the Enrolled User's conduct of Treatment, Payment or Health Care Operations. As a part of usage for Health Care Operations, Swellby may also use and disclose PHI as necessary for its proper management and administration and to carry out its legal responsibilities.
+
+Swellby's HIPAA Privacy Practices to protect PHI are set forth in more detail in its Swellby SUBSCRIPTION AGREEMENT. Alternatively, you may contact us to receive further information regarding our Privacy Practices.
+
+If you would like more information regarding Swellby's compliance, you may contact us at your convenience.

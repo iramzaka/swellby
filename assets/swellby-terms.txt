@@ -1,0 +1,182 @@
+Swellby Terms and Agreement
+This Swellby Subscription Agreement ("Agreement") is a legal agreement entered into between you as an individual and/or a legal entity desiring to access the Software, as defined herein, and Swellby INC. ("SWELLBY"). BY CLICKING "JOIN NOW", YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT AND AGREE, ON BEHALF OF YOURSELF AND ON BEHALF OF ANY ENTITY YOU REPRESENT, TO BE BOUND BY THE TERMS OF THIS AGREEMENT REGARDING THE SOFTWARE, USE THEREOF OR ACCESS THERETO. IF YOU DO NOT AGREE TO BE SUBJECT TO THE TERM OF THIS AGREEMENT, YOU MAY NOT ACCESS THE SOFTWARE.
+
+1. SCOPE OF AGREEMENT
+SWELLBY has developed and is the exclusive owner and licensor of the on-line case referral software known as the "Swellby". This Software enables an Enrolled User to access and update information relating to case referrals and other health care services provided to patients in a secure and HIPAA compliant manner. SWELLBY agrees to provide Enrolled Users with access to the Software in accordance with the terms of this Agreement.
+
+2. DEFINITIONS
+Except as otherwise set forth in this Agreement, the following words shall have the meanings ascribed to them:
+
+2.1 "CLIENT" means individual or a legal entity that provides health care services through itself or independent contractors. SWELLBY may authorize CLIENT's independent contractors or employees to access the Software provided that CLIENT (i) is in compliance with this Agreement at the time of such election; (ii) shall not create a service bureau for other websites or any third party that uses the Software in any manner; and (iii) ensures that all independent contractors or CLIENT employees comply with the terms of this Agreement.
+
+2.2 "Enrolled User" means a legal entity or individual who has properly registered with SWELLBY prior to accessing the Software who may be a covered entity under HIPAA.
+
+2.3 "Swellby Product" means the system which includes the Swellby website, the Swellby mobile application, Documentation, proprietary extensions to other systems, confidential and proprietary information.
+
+2.4 "Patient Data" means the data provided by CLIENT including patient information.
+
+2.5 "Software" means the totality of computer programs, code, updates, updates, screen layouts and designs, releases, procedures, rules or routines relating thereto in any form and on any medium whether provided in object code, source code or otherwise.
+
+2.6 "Documentation" means the materials pertinent to the Software including instruction manuals, reports, and screen displays accessible by CLIENT pursuant to this Agreement.
+
+3. TERM; NON-EXCLUSIVE
+3.1 Term. This Agreement shall become effective for an Enrolled User when that user accesses the Swellby Product and, unless terminated earlier in accordance herein, shall have an initial term of one (1) year from the Effective Date. Thereafter, this Agreement shall automatically renew for successive periods of one (1) year unless one party provides the other with written notice of its intention not to renew at least 30 days prior to the end of the then current Term. The initial term and any renewal term shall be collectively referred to as the "Term".
+
+3.2 Non-exclusive. Nothing in this Agreement shall prohibit SWELLBY from providing the services described herein to any other entity.
+
+4. SERVICE
+4.1 Obligations of SWELLBY
+
+4.1.1 Service Standards. SWELLBY shall use commercially reasonable efforts to:
+
+(i) Maintain the SWELLBY facilities, hardware, Software, and other devices used in providing Enrolled Users with access to the Software. Notwithstanding the foregoing, the Service shall not be available during periods including, but not limited to periods for performance of maintenance, testing, or any problem.
+
+(ii) Provide Enrolled Users with access to the Software according to industry standards in a manner that protects information stored at SWELLBY. Enrolled User understands that SWELLBY uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Software.
+
+(iii) Provide maintenance, upgrades and updates to the Software in accordance with SWELLBY's policies and procedures.
+
+4.1.2 Limitations. SWELLBY's obligations described above are subject to the following limitations:
+
+(i) SWELLBY is not responsible for the security of data residing on the equipment at Enrolled User facilities or any equipment owned or operated by CLIENT or Enrolled User.
+
+(ii) SWELLBY shall have no liability for any failure or delay in performing its obligations hereunder to the extent such failure or delay is caused by the act or omissions of CLIENT or Enrolled User; or it results from actions taken by SWELLBY using commercially reasonable efforts to avoid violating a law, rule or regulation of any governmental authority.
+
+(iii) SWELLBY shall not be responsible for the quality or delivery of services provided by CLIENT or Enrolled User.
+
+4.2 Obligations of Enrolled User
+
+4.2.1 Authorizations. Enrolled User hereby grants to SWELLBY the following authorizations:
+
+4.2.1.1 to process, update, modify and store all provided data;
+
+4.2.1.2 to take all actions necessary to enforce compliance with SWELLBY's policies and procedures and, in particular, to require compliance with HIPAA and other similar regulations; and
+
+4.2.1.3 to solicit information regarding each Enrolled User.
+
+4.2.2 Enrolled User's Identity. If registering an entity, Enrolled User must provide legal entity name, entity address and requested contact information. Enrolled User must provide full name, a valid email address, and any other information requested in order to complete the registration process.
+
+4.2.3 Auto Registration. Account registration by automated methods is not permitted.
+
+4.2.4 Account Security. Enrolled User is responsible for maintaining the security of account and password. SWELLBY will not be liable for any loss or damage from failure to comply with this security obligation.
+
+4.2.5 Enrolled User shall obtain informed parental consent to disclose personally identifiable information and child specific information concerning services and supports authorized in the child and family’s IFSP for the purpose of locating available NYS approved early intervention providers for service delivery.
+
+4.2.6 Content Responsibility. Enrolled User is responsible for all Content posted.
+
+4.2.7 Resolution of Technical Problems. Enrolled User agrees to provide reasonable assistance to SWELLBY in identifying, isolating and resolving any problems that may arise in connection with the Swellby Product.
+
+4.2.8 Compliance with Law. CLIENT shall at all times comply with applicable laws, rules and regulations relating to its obligations under this Agreement.
+
+5. FEES
+Standard service fees are levied upon therapy providers only. The current fee schedule ("Fee Schedule") shall be set forth on the Swellby website which fee schedule is incorporated herein by reference. Enrolled User agrees to pay Swellby the fees when invoiced based upon the Fee Schedule then in effect at the time that the Enrolled User accesses the Swellby Product. Any changes to the Fee Schedule shall be posted on the Swellby website which Enrolled User shall review as necessary. Enrolled User shall pay by the due date on the invoice through credit card, debit card, electronic funds authorization, or business check. Swellby services are cancellable at any point, however you will owe the amount charged for the variable rate services used up to the point of cancellation and for the fixed rate services through the end of the billing period.
+
+6. SUBSCRIBER ACCESS
+6.1 License Grant. Provided Enrolled User has not breached any term of this Agreement including payment obligations, SWELLBY hereby grants Enrolled User a non-exclusive, non-transferable right to access the Software during the Term of this Agreement solely to provide the services to patients. This license excludes the ability of an Enrolled User to provide others with access to the Software through a website or any other medium or format.
+
+Enrolled User may not assign, license or otherwise transfer any or all of its rights under this Agreement including any password or other access rights. Enrolled User will not copy, alter, adapt, modify or make derivative works of the Software nor permit others to do so.
+
+SWELLBY shall have no responsibility or liability for failure of the Software to perform in accordance with this Agreement if such failure is caused by equipment, maintenance issues, third party software, or browser compatibility issues or where Enrolled User implements third party software not documented by SWELLBY as being supported as part of the Software. In the event SWELLBY modifies the Software or provides other corrections ("Corrections") result of performance issues, maintenance, platform changes or modifications to third-party Software, then such Corrections shall be provided by SWELLBY at its then-current time and material rates.
+
+Enrolled User shall not, nor shall it permit others to, reverse engineer, decompile, modify or create derivative works from the Software. Enrolled User shall not generate any source code or object code listing from the Software. Any rights in derivative works created by Enrolled User will be deemed the property of and be owned by SWELLBY.
+
+7. INTELLECTUAL PROPERTY
+7.1 Intellectual Property Rights. All right, title and interest in and to the Swellby Product shall remain exclusively with SWELLBY including any derivatives thereof, updates, releases or versions.
+
+7.2 SWELLBY Access to Patient Data. SWELLBY will have the right to access or modify patient data during the Term of this Agreement. Such access or modifications shall be subject to HIPAA requirements.
+
+7.3 Limitations.
+
+(a) Enrolled User shall not reproduce or distribute the Software and/or Documentation.
+
+(b) Enrolled User shall not remove any proprietary, trademark or copyright markings or confidentiality legends within the Software or Documentation or any part thereof.
+
+(c) The use by others of SWELLBY trademarks and service marks shall be subject to the SWELLBY usage guidelines then in effect as provided by SWELLBY.
+
+8. WARRANTIES
+THE SWELLBY SOFTWARE AND SERVICES ARE PROVIDED 'AS IS'. SWELLBY DOES NOT AND CANNOT WARRANT THE PERFORMANCE OR RESULTS ENROLLED USER MAY OBTAIN FROM USING THE SWELLBY PRODUCT. SWELLBY DOES NOT WARRANT THAT USE OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR FREE OR THAT IT WILL WORK WITH ALL BROWSERS. SWELLBY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, AS TO QUALITY OR NONINFRINGEMENT OF THIRD PARTY RIGHTS, MERCHANTABILITY, OR FITNESS FOR ANY PARTICULAR PURPOSE. Enrolled User warrants that any data entered using the Software complies with all HIPAA and other government requirements related to access and use of personal health information ("PHI").
+
+
+9. PERSONAL HEALTH INFORMATION
+SWELLBY acknowledges that CLIENT and Enrolled User, as a health care provider as defined under the Health Insurance Portability and Accountability Act of 1996 ("HIPAA") Subtitle F, Public Law 104-191, Section 261, et seq. and under the various privacy rules and laws governing health care providers, have certain obligations regarding privacy. If the HIPAA privacy rule is amended after the date of the Software release and if SWELLBY determines that the Software will not be able to implement the amendments during the applicable time period, SWELLBY will provide Enrolled User with notice of such noncompliance as soon as practicable. SWELLBY shall then use commercially reasonable efforts to bring the Software into compliance with any amendments to the Privacy Rule.
+
+SWELLBY agrees, except as otherwise provided herein, only to use or disclose the PHI as necessary to provide the services described in this Agreement to the extent that any such use or disclosure of the PHI is consistent with Enrolled User's conduct of Treatment, Payment or Health Care Operations (as such terms are defined from time to time by the Privacy Rule) or a use or disclosure permitted by Section 512 of the Privacy Rule. Notwithstanding the foregoing, SWELLBY may use and disclose the PHI for: a) its proper management and administration; or b) to carry out its legal responsibilities.
+
+Except as otherwise provided in this Agreement, SWELLBY may also aggregate the PHI in its possession with the PHI of other covered entities that provide data through the Software provided that the purpose of such aggregation is to provide Enrolled User with data analyses relating to its Health Care Operations. Enrolled User hereby authorized SWELLBY to disclose the PHI obtained from Enrolled User to another Enrolled User provided such disclosure is in conjunction with providing medical services to a patient.
+
+SWELLBY agrees to use appropriate safeguards to prevent the unauthorized use or disclosure of PHI other than as provided for in this Section. SWELLBY agrees to report to Enrolled User any use or disclosure of the PHI not permitted under this Section of which SWELLBY becomes aware. Such report to be made within five (5) days of SWELLBY becoming aware of such use or disclosure;
+
+Enrolled User agrees to (i) notify SWELLBY of material limitations to the consents or authorizations as have been obtained by Enrolled User from Individuals, as defined under HIPAA, and any other restrictions on the use or disclosure of PHI as agreed to by Client (ii) to notify SWELLBY of any restrictions on use and disclosure requested by an Individual, of any personal representative designations made by an Individual, and any alternative means or locations of communications requested by an Individual, provided that Licensee has agreed to accept and implement such requests;
+
+9.1 Access to PHI. In any case where SWELLBY possesses portions of the Designated Record Set that are not held also by Enrolled User, SWELLBY shall make the PHI available in the time and manner requested by Licensee to permit Licensee to fulfill its responsibilities under 45 C.F.R. 164.524. In the event any Individual requests access to PHI directly from SWELLBY, SWELLBY shall, within five (5) days of receipt of such request, forward it to Enrolled User. Any denials of access to the PHI requested shall be the responsibility of Enrolled User.
+
+9.2 Amendment of PHI. In the event any individual directly requests SWELLBY amend his or her PHI, SWELLBY shall, within five (5) days of receipt of the request, forward such request to the applicable Enrolled User. Any denials of amendment to the PHI shall be the responsibility of Enrolled User.
+
+9.3 Access to Books and Records Regarding PHI. SWELLBY will make books and records relating to the use and disclosure of PHI received from Enrolled User available to the Secretary of the federal Department of Health and Human Services for purposes of determining Enrolled User's compliance with the Privacy Rule.
+
+10. INDEMNIFICATION
+10.1 Indemnification. CLIENT and Enrolled Users ("Indemnifying Party") shall indemnify, defend, and hold harmless SWELLBY, its affiliates, directors, officers, employees, agents, representatives and shareholders against all loss, damage or expense of any kind, including attorneys' fees and costs of litigation arising from claims of a third party, to the extent such claims arise in whole or part from:
+
+(a) HIPAA violations by CLIENT or Enrolled User; or
+
+(b) the negligence or willful misconduct of CLIENT or its employees or independent contractors including Enrolled Users.
+
+10.2 Procedure. SWELLBY shall promptly give notice of the claim and permit the Indemnifying Party to assume the defense of the claim. SWELLBY shall cooperate fully in defense of the claim, and the Indemnifying Party shall pay SWELLBY's reasonable costs and expenses as incurred.
+
+11. DAMAGES
+11.1 SWELLBY SHALL NOT BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, PUNITIVE OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION, BUSINESS INTERRUPTION DAMAGES, LOSS OF ANTICIPATED PROFITS OR OTHER ECONOMIC LOSS, UNDER ANY THEORY OR CAUSE OF ACTION WHETHER IN TORT, CONTRACT OR OTHERWISE, REGARDLESS OF WHETHER OR NOT IT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE MAXIMUM AMOUNT OF DAMAGES TO BE PAID UNDER THIS AGREEMENT (REGARDLESS OF HOW CHARACTERIZED) SHALL NOT EXCEED THE AMOUNT RECEIVED BY SWELLBY FROM ENROLLED USER UNDER THIS AGREEMENT. Some states or jurisdictions do not allow the exclusion or limitation of incidental, consequential or special damages, or the exclusion of implied warranties or limitations on how long an implied warranty may last, so the above limitations may not apply.
+
+12. TERMINATION
+12.1 In addition to any other termination rights granted by this Agreement, either party may terminate this Agreement on thirty (30) days prior written notice for a material breach by the other party of any of its obligations hereunder, unless the breaching party has cured or has made significant progress to cure such breach within a reasonable time.
+
+12.2 Either party may terminate this Agreement for convenience upon five (5) days prior written notice to the other party. Upon receipt of any and all payments due to SWELLBY, SWELLBY agrees to return to Enrolled User data provided by Enrolled User. SWELLBY will provide termination assistance services as mutually agreed upon by both parties. Such services will be rendered on a time and materials basis.
+
+12.3 SWELLBY, in its sole discretion, has the right to suspend or terminate your account and refuse any and all current or future use of the Software for any reason at any time. SWELLBY reserves the right to refuse service to anyone for any reason at any time.
+
+13. CONFIDENTIALITY
+13.1 Obligations of SWELLBY. SWELLBY acknowledges that in providing the services specified hereunder that it may have access to confidential or proprietary information of Enrolled User including, but not limited to, PHI, and other data ("Enrolled User Confidential Information"). SWELLBY agrees to maintain such information as confidential or proprietary and to hold such information in confidence and agrees to use such information only to fulfill its obligations under this Agreement. SWELLBY shall secure all such data, records, reports and information and all other information regarding the business and operations of CLIENT obtained from CLIENT using at least the same degree of care it uses to protect its own confidential information of like kind but in no event less than a reasonable standard of care.
+
+13.2 Obligations of CLIENT. CLIENT agrees that all information identified by SWELLBY or its affiliates as confidential or proprietary including without limitation, Software, passwords to access the Software, and Documentation, is confidential and shall be and shall remain the property of SWELLBY. Enrolled User shall secure all such information using at least the same degree of care it uses to protect other information of like kind but in no event less that a reasonable standard of care. Enrolled User further agrees that it shall not use such information for any purpose other than to fulfill its obligations hereunder.
+
+13.3 Use. All confidential information shall be held in confidence by the receiving party for a period of three (3) years following disclosure, except all trade secrets, including Software and patient data, shall be held in confidence in perpetuity or until they are no longer trade secrets, whichever is earlier. The parties agree that confidential information shall be disclosed only to those persons within their respective organizations or consultants under contract to the party who have a need to know, and who have been advised of the obligations of confidentiality under this Agreement. Such consultants shall be bound by confidentiality requirements at least equivalent to those of the party's employees. The receiving party shall bear responsibility for any breach of this Subsection.
+
+13.4 Limitations. The obligations relating to the receipt of Confidential Information shall not apply to any information which:
+
+(a) is already public or becomes available to the public through no breach of this Agreement by the receiving party; or
+
+(b) was in the receiving party's possession prior to receipt from the disclosing party; or
+
+(c) is lawfully received independently from a third party who is free to disclose such information to the receiving party; or
+
+(d) is independently developed by or on behalf of the receiving party; or
+
+(e) is required to be disclosed by a governmental agency or a court having proper jurisdiction. If such a requirement is made, the party required to make such a disclosure shall give the other party reasonable notice to enable the other party to try to protect the confidentiality of the information.
+
+13.5 Upon termination of this Agreement or upon earlier request by the disclosing party, the receiving party shall return or, at the option of the disclosing party, destroy all confidential information received under this Agreement and provide certification by an officer of party that such destruction has occurred.
+
+14. NOTICE
+All notices to be given hereunder shall be in writing and, unless otherwise provided, shall be deemed to have been given when delivered in person or when deposited in the U.S. Mail, postage prepaid, properly addressed, certified mail, return receipt requested, or deposited with a receipted private express delivery service, or upon receipt of confirmed delivery when sent by facsimile (with confirmation copy sent by the U.S. Postal Service) to SWELLBY at the address listed on SWELLBY website and to Enrolled User at the address provided during the registration process, or to such other address as may be designated in writing by notice to the other party pursuant to this Section.
+
+15. GENERAL PROVISIONS
+15.1 Relationship Between Parties. Nothing contained in this Agreement shall be varrued to varitute either party hereto as the joint venturer, partner, employee, agent or other representative of the other party hereto. Neither party shall make any representation which causes, or may cause, a third party to believe otherwise.
+
+15.2 Governing Law. This Agreement shall for all purposes be governed by and interpreted in accordance with the laws of the State of Illinois, notwithstanding any conflicts of law principles.
+
+15.3 Severability. If any provision of this Agreement is determined to be unenforceable for any reason, then the remaining provisions hereof shall remain unaffected and in full force and effect.
+
+15.4 Modifications. Any modification, amendment, supplement, or other change to this Agreement must be in writing and signed by a duly authorized officer of each party.
+
+15.5 Assignment. CLIENT may not assign this Agreement, any passwords providing access to the Software, or any rights or obligations hereunder, without the prior written consent of SWELLBY. This Agreement shall apply to and bind any permitted successors or assigns of the parties hereto.
+
+15.6 Rights And Remedies; Waiver. If any legal action is brought to enforce any obligations hereunder, the prevailing party shall be entitled to receive its reasonable attorneys' fees and court costs in addition to any other relief it may receive. If either party fails to perform any provision of this Agreement and the other party does not enforce such provision, failure to enforce on that occasion shall not prevent enforcement on later occasions.
+
+15.7 Force Majeure. Neither party shall be responsible for failure to fulfill its obligations hereunder due to causes beyond its reasonable control, including without limitation acts of God, acts or omissions of civil or military authority, fire, floods, riots or wars.
+
+15.8 Marketing. CLIENT authorizes SWELLBY or its affiliates to identify CLIENT in its press releases, advertising and marketing efforts as a user of the Swellby Product.
+
+15.9 Headings. Headings used throughout this Agreement are for reference purposes only and are not to be used to varrue any term or condition hereof.
+
+15.10 Survival. Sections 4.2.3, 6, 7, 9, 10, 12, and 14.10 shall survive any expiration or termination of this Agreement.
+
+15.11 Entire Agreement. This Agreement, including any attachments hereto, varitutes the sole and entire agreement between the parties with respect to the subject matter hereof, and supersedes in its entirety any and all written or oral agreements between them pertaining to the subject matter hereof. No terms of any purchase order shall be applicable nor shall they have any effect.
+
+15.12 Counterparts. This Agreement may be executed in any number of counterparts, and each of the parties hereto on separate counterparts, each of which counterparts, when so executed and delivered, shall be deemed an original, but all such counterparts taken together shall varitute one and the same instrument.

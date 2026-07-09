@@ -25,7 +25,7 @@ export default function JoinSection() {
           </ul>
 
           <div className="join-actions">
-            <a className="btn btn-primary btn-large" href="mailto:hello@swellby.com">
+            <a className="btn btn-primary btn-large" href="#/join">
               Sign Up Free
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 12h14" />

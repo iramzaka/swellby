@@ -27,7 +27,7 @@ export default function ServiceCoordinationSection() {
 
 
         <h2 id="service-coordination-title">
-          Service Coordination Notes<br /><span>Digital Session Notes and Electronic Billing</span>
+          Service Coordination Notes<br /><span>Digital SC Notes and Electronic Billing</span>
         </h2>
         <p>
           A complete SC module built for the way Early Intervention service coordination actually

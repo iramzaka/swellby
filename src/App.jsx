@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Footer, Header } from "./components/index.js";
-import { HomePage, JoinPage, NotesAppPage, PricingPage } from "./pages/index.js";
+import { HomePage, InitiationPage, JoinPage, NotesAppPage, PricingPage } from "./pages/index.js";
 
 const getRoute = () => {
   if (window.location.hash === "#/join") return "join";
   if (window.location.hash === "#/pricing") return "pricing";
   if (window.location.hash === "#/notes-app") return "notes-app";
+  if (window.location.hash === "#/initiation") return "initiation";
   return "home";
 };
 
@@ -143,7 +144,7 @@ export default function App() {
   return (
     <>
       <Header />
-      {route === "join" ? <JoinPage /> : route === "pricing" ? <PricingPage /> : route === "notes-app" ? <NotesAppPage /> : <HomePage />}
+      {route === "join" ? <JoinPage /> : route === "pricing" ? <PricingPage /> : route === "notes-app" ? <NotesAppPage /> : route === "initiation" ? <InitiationPage /> : <HomePage />}
       <Footer />
     </>
   );
