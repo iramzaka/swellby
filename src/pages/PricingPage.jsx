@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const plans = [
   {
@@ -58,7 +58,29 @@ const serviceCoordinationFeatures = [
   },
 ];
 
+const caseOptionalFeatures = [
+  "Doc Storage & Signing",
+  "Electronic Billing",
+];
+
 export default function PricingPage() {
+  const [selectedCaseOptions, setSelectedCaseOptions] = useState([]);
+  const [scTeamSize, setScTeamSize] = useState(5);
+  const caseMonthlyTotal = 150 + selectedCaseOptions.length * 50;
+  const scMonthlyTotal = 250 + Math.max(0, scTeamSize - 5) * 50;
+
+  const toggleCaseOption = (option) => {
+    setSelectedCaseOptions((current) => (
+      current.includes(option)
+        ? current.filter((item) => item !== option)
+        : [...current, option]
+    ));
+  };
+
+  const updateScTeamSize = (change) => {
+    setScTeamSize((current) => Math.max(5, current + change));
+  };
+
   return (
     <main className="pricing-page" id="pricing-page">
       <section className="pricing-hero" aria-labelledby="pricing-page-title">
@@ -119,13 +141,71 @@ export default function PricingPage() {
         </div>
 
         <div className="notes-pricing-visual">
-          <img src="assets/session-notes-app.png" alt="Swellby Session Notes app shown on three phones" />
+          <article className="case-plan-card" aria-label={`Case Management plan total is ${caseMonthlyTotal} dollars per month`}>
+            <h3>Plan Overview</h3>
+            <div className="case-plan-base">
+              <span className="case-plan-price">$150</span>
+              <span className="case-plan-period">/mo</span>
+            </div>
+            <p>Includes up to 300 notes</p>
+            <strong>$0.50 per additional note</strong>
+
+            <span className="case-plan-line" aria-hidden="true"></span>
+
+            <h4>Optional Features:</h4>
+            <div className="case-plan-options">
+              {caseOptionalFeatures.map((option) => (
+                <label className="case-plan-option" key={option}>
+                  <input
+                    type="checkbox"
+                    checked={selectedCaseOptions.includes(option)}
+                    onChange={() => toggleCaseOption(option)}
+                  />
+                  <span aria-hidden="true"></span>
+                  {option} (+$50/mo)
+                </label>
+              ))}
+            </div>
+
+            <div className="case-plan-total">${caseMonthlyTotal}/mo</div>
+            <a className="case-plan-action" href="#/join">
+              Request Demo
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 5 7 7-7 7" /></svg>
+            </a>
+          </article>
         </div>
       </section>
 
       <section className="notes-pricing-section service-pricing-section" aria-labelledby="service-pricing-title">
         <div className="notes-pricing-visual service-pricing-visual">
-          <img src="assets/service-coordination-laptop.png" alt="Swellby service coordination notes dashboard on a laptop" />
+          <article className="case-plan-card sc-plan-card" aria-label={`Service Coordination plan total is ${scMonthlyTotal} dollars per month for ${scTeamSize} SCs`}>
+            <h3>Plan Overview</h3>
+            <div className="case-plan-base">
+              <span className="case-plan-price">$250</span>
+              <span className="case-plan-period">/mo</span>
+            </div>
+            <p>Includes up to 5 SCs</p>
+            <strong>$50 for each additional SC</strong>
+
+            <span className="case-plan-line" aria-hidden="true"></span>
+
+            <h4>Select SC Team Size:</h4>
+            <div className="sc-team-control" aria-label="Select SC team size">
+              <button type="button" onClick={() => updateScTeamSize(-1)} disabled={scTeamSize === 5} aria-label="Decrease SC team size">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /></svg>
+              </button>
+              <span>{scTeamSize} SCs</span>
+              <button type="button" onClick={() => updateScTeamSize(1)} aria-label="Increase SC team size">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14" /><path d="M5 12h14" /></svg>
+              </button>
+            </div>
+
+            <div className="case-plan-total">${scMonthlyTotal}/mo</div>
+            <a className="case-plan-action" href="#/join">
+              Request Demo
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 5 7 7-7 7" /></svg>
+            </a>
+          </article>
         </div>
 
         <div className="notes-pricing-content">

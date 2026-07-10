@@ -131,7 +131,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-badge" id="hipaa">
+         <a class="" href="https://www.accountablehq.com/" target="_blank" rel="noopener noreferrer" aria-label="Swellby home">
         <img src="assets/accountable.png" alt="HIPAA compliant, powered by Accountable" />
+        </a>
       </div>
 
       {activeLegal ? (

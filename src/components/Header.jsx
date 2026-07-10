@@ -1,5 +1,5 @@
 ﻿import React, { useEffect, useState } from "react";
-
+import { createPortal } from "react-dom";
 export default function Header() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
 
@@ -39,7 +39,7 @@ export default function Header() {
         <a className="btn btn-primary" href="#/join">Sign Up</a>
       </nav>
 
-      {isLoginOpen ? (
+      {isLoginOpen ? createPortal(
         <div className="login-modal-backdrop" role="presentation" onMouseDown={() => setIsLoginOpen(false)}>
           <div
             className="login-modal"
@@ -74,7 +74,8 @@ export default function Header() {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body,
       ) : null}
     </header>
   );

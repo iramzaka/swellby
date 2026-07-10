@@ -57,7 +57,7 @@ export default function SessionNotesSection() {
             </article>
           </div>
 
-          <a className="btn btn-primary btn-large notes-button" href="#signup" data-scroll="true">
+          <a className="btn btn-primary btn-large notes-button" href="#/join" data-scroll="true">
             Request Demo
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5 12h14" />
