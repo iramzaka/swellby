@@ -72,20 +72,6 @@ export default function InitiationPage() {
   return (
     <main className="initiation-page" id="initiation-page">
       <section className="initiation-section" aria-labelledby="initiation-title">
-        <div className="initiation-info-panel">
-          {/* <span className="initiation-eyebrow">Agency onboarding</span> */}
-          <div className="initiation-device">
-            <img src="assets/marketplace-device.png" alt="Swellby dashboard shown on laptop and mobile device" />
-          </div>
-          <div className="initiation-copy">
-            <h2>Easy to set up - free to join!</h2>
-            <p>
-              Swellby is a secure network of agencies. To join, you must be an approved Early
-              Intervention provider in NYC.
-            </p>
-          </div>
-        </div>
-
         <div className="initiation-form-panel">
           {/* <span className="initiation-form-kicker">Start your agency profile</span> */}
           <h1 id="initiation-title">Create your Account</h1>
