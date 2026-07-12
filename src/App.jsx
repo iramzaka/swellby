@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Footer, Header } from "./components/index.js";
-import { HomePage, InitiationPage, JoinPage, NotesAppPage, PricingPage } from "./pages/index.js";
+import { HomePage, JoinPage, NotesAppPage, PricingPage } from "./pages/index.js";
 
 const getRoute = () => {
   if (window.location.hash === "#/join") return "join";
   if (window.location.hash === "#/pricing") return "pricing";
   if (window.location.hash === "#/notes-app") return "notes-app";
-  if (window.location.hash === "#/initiation") return "initiation";
   return "home";
 };
 
@@ -123,6 +122,11 @@ export default function App() {
       });
     };
 
+    const handleNavSelection = (event) => {
+      const navItem = event.target.closest("[data-nav] a, [data-nav] button:not([data-menu-toggle])");
+      if (navItem) closeMenu();
+    };
+
     const handleKeyUp = (event) => {
       if (event.key === "Escape") closeMenu();
     };
@@ -131,12 +135,14 @@ export default function App() {
     window.addEventListener("scroll", syncHeader, { passive: true });
     toggle?.addEventListener("click", handleToggle);
     document.addEventListener("click", handleScrollLink);
+    document.addEventListener("click", handleNavSelection);
     document.addEventListener("keyup", handleKeyUp);
 
     return () => {
       window.removeEventListener("scroll", syncHeader);
       toggle?.removeEventListener("click", handleToggle);
       document.removeEventListener("click", handleScrollLink);
+      document.removeEventListener("click", handleNavSelection);
       document.removeEventListener("keyup", handleKeyUp);
     };
   }, []);
@@ -144,7 +150,7 @@ export default function App() {
   return (
     <>
       <Header />
-      {route === "join" ? <JoinPage /> : route === "pricing" ? <PricingPage /> : route === "notes-app" ? <NotesAppPage /> : route === "initiation" ? <InitiationPage /> : <HomePage />}
+      {route === "join" ? <JoinPage /> : route === "pricing" ? <PricingPage /> : route === "notes-app" ? <NotesAppPage /> : <HomePage />}
       <Footer />
     </>
   );

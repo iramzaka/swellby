@@ -2,12 +2,16 @@
 import { createPortal } from "react-dom";
 export default function Header() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   useEffect(() => {
-    if (!isLoginOpen) return undefined;
+    if (!isLoginOpen && !isContactOpen) return undefined;
 
     const handleKeyDown = (event) => {
-      if (event.key === "Escape") setIsLoginOpen(false);
+      if (event.key === "Escape") {
+        setIsLoginOpen(false);
+        setIsContactOpen(false);
+      }
     };
 
     document.body.classList.add("modal-open");
@@ -17,7 +21,7 @@ export default function Header() {
       document.body.classList.remove("modal-open");
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isLoginOpen]);
+  }, [isLoginOpen, isContactOpen]);
 
   return (
     <header className="site-header" data-header="true">
@@ -32,8 +36,8 @@ export default function Header() {
       </button>
 
       <nav className="site-nav" aria-label="Primary navigation" data-nav="true">
-        {/* <a href="#/notes-app">Session Notes App</a> */}
-        <a href="#/pricing">Pricing</a>
+        <button className="nav-link-button nav-menu-item" type="button" onClick={() => setIsContactOpen(true)}>Contact Us</button>
+        <a className="nav-menu-item" href="#/pricing">Pricing</a>
         <span className="nav-divider" aria-hidden="true"></span>
         <button className="btn btn-outline login-trigger" type="button" onClick={() => setIsLoginOpen(true)}>Log In</button>
         <a className="btn btn-primary" href="#/join">Sign Up</a>
@@ -72,6 +76,39 @@ export default function Header() {
                 </div>
                 <div onKeyPress={() => true}></div>
               </div>
+            </div>
+          </div>
+        </div>,
+        document.body,
+      ) : null}
+
+      {isContactOpen ? createPortal(
+        <div className="login-modal-backdrop" role="presentation" onMouseDown={() => setIsContactOpen(false)}>
+          <div
+            className="login-modal request-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="contact-modal-title"
+            onMouseDown={(event) => event.stopPropagation()}
+          >
+            <button className="login-modal-close" type="button" onClick={() => setIsContactOpen(false)} aria-label="Close contact dialog">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6l12 12" />
+                <path d="M18 6 6 18" />
+              </svg>
+            </button>
+
+            <div className="modalContentsWrapper">
+              <form className="formBody trigger request-form-body">
+                <div id="contact-modal-title" className="formRow fSizeXXL fColorSWBlue">Contact Us</div>
+                <input type="text" className="trigger input request-input" placeholder="First Name" />
+                <input type="text" className="trigger input request-input" placeholder="Last Name" />
+                <input type="text" className="trigger input request-input" placeholder="Agency Name" />
+                <input type="email" className="trigger input request-input" placeholder="Email" />
+                <input type="tel" className="trigger input request-input" placeholder="Phone" />
+                <textarea className="trigger input request-input request-textarea" placeholder="What's on your mind?"></textarea>
+                <button type="button" className="globalButtonStyle medium right do-login request-submit" onClick={() => setIsContactOpen(false)}>Send</button>
+              </form>
             </div>
           </div>
         </div>,

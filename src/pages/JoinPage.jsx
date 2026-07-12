@@ -14,7 +14,6 @@ const joinOptions = [
     image: "assets/join-therapist-modern.png",
     alt: "Therapist using the Swellby digital session notes app",
     theme: "blue",
-    number: "01",
     modal: {
       title: "Get Session Notes App",
       message:
@@ -34,7 +33,6 @@ const joinOptions = [
     image: "assets/join-staffer-modern.png",
     alt: "Agency staff member using Swellby",
     theme: "orange",
-    number: "02",
     modal: {
       title: "Join Existing Agency",
       message:
@@ -54,8 +52,7 @@ const joinOptions = [
     image: "assets/join-agency-modern.png",
     alt: "Agency joining Swellby",
     theme: "green",
-    number: "03",
-    href: "#/initiation",
+    requestForm: true,
   },
 ];
 
@@ -90,8 +87,7 @@ export default function JoinPage() {
 
         <div className="join-choice-grid">
           {joinOptions.map((option) => (
-            <article className={`join-choice-card join-choice-card-${option.theme}${option.modal || option.href ? " join-choice-card-clickable" : ""}`} key={option.image}>
-              {/* <span className="join-choice-number" aria-hidden="true">{option.number}</span> */}
+            <article className={`join-choice-card join-choice-card-${option.theme}${option.modal || option.requestForm ? " join-choice-card-clickable" : ""}`} key={option.image}>
               {option.modal ? (
                 <button
                   className="join-choice-card-action"
@@ -108,8 +104,13 @@ export default function JoinPage() {
                     </svg>
                   </span>
                 </button>
-              ) : option.href ? (
-                <a className="join-choice-card-action" href={option.href}>
+              ) : option.requestForm ? (
+                <button
+                  className="join-choice-card-action"
+                  type="button"
+                  onClick={() => setActiveModal({ title: "Sign Up/Demo Request", requestForm: true })}
+                  aria-haspopup="dialog"
+                >
                   <img src={option.image} alt={option.alt} />
                   <h2>{option.title}</h2>
                   <span className="join-choice-arrow" aria-hidden="true">
@@ -118,7 +119,7 @@ export default function JoinPage() {
                       <path d="m13 5 7 7-7 7" />
                     </svg>
                   </span>
-                </a>
+                </button>
               ) : (
                 <>
                   <img src={option.image} alt={option.alt} />
@@ -143,7 +144,7 @@ export default function JoinPage() {
             role="dialog"
             aria-modal="true"
             aria-labelledby="alertTitle"
-            aria-describedby="alertMessage"
+            aria-describedby={activeModal.requestForm ? undefined : "alertMessage"}
             onMouseDown={(event) => event.stopPropagation()}
           >
             <button className="join-modal-close" type="button" onClick={() => setActiveModal(null)} aria-label="Close dialog">
@@ -155,22 +156,38 @@ export default function JoinPage() {
 
             <div className="modalContentsWrapper">
               <div className="formBody">
-                <span className="join-modal-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                  </svg>
-                </span>
-                <div id="alertTitle" className="formRow fSizeXXL fColorSWBlue">{activeModal.title}</div>
-                <div id="alertMessage" className="formRow">
-                  {activeModal.message}
-                </div>
-                <div className="formRowSubmit">
-                  <button id="modalInfoOkButton" type="button" className="globalButtonStyle medium right modal-close modal-ok" onClick={() => setActiveModal(null)}>
-                    Ok
-                  </button>
-                </div>
+                {activeModal.requestForm ? (
+                  <>
+                    <div id="alertTitle" className="formRow fSizeXXL fColorSWBlue signup-request-title">Sign Up/Demo Request</div>
+                    <form className="request-form-body">
+                      <input type="text" className="trigger input request-input" placeholder="First Name" />
+                      <input type="text" className="trigger input request-input" placeholder="Last Name" />
+                      <input type="text" className="trigger input request-input" placeholder="Agency Name" />
+                      <input type="email" className="trigger input request-input" placeholder="Email" />
+                      <input type="tel" className="trigger input request-input" placeholder="Phone" />
+                      <button type="button" className="globalButtonStyle medium right do-login request-submit" onClick={() => setActiveModal(null)}>Send</button>
+                    </form>
+                  </>
+                ) : (
+                  <>
+                    <span className="join-modal-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                      </svg>
+                    </span>
+                    <div id="alertTitle" className="formRow fSizeXXL fColorSWBlue">{activeModal.title}</div>
+                    <div id="alertMessage" className="formRow">
+                      {activeModal.message}
+                    </div>
+                    <div className="formRowSubmit">
+                      <button id="modalInfoOkButton" type="button" className="globalButtonStyle medium right modal-close modal-ok" onClick={() => setActiveModal(null)}>
+                        Ok
+                      </button>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </div>

@@ -24,6 +24,7 @@ const legalDocuments = {
 export default function Footer() {
   const [activeLegalDocument, setActiveLegalDocument] = useState(null);
   const [legalTextByType, setLegalTextByType] = useState({});
+  const currentYear = new Date().getFullYear();
   const activeLegal = activeLegalDocument ? legalDocuments[activeLegalDocument] : null;
   const activeLegalText = activeLegalDocument ? legalTextByType[activeLegalDocument] : "";
 
@@ -70,7 +71,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-brand">
-        <a class="brand" href="#/home" aria-label="Swellby home">
+        <a className="brand" href="#/home" aria-label="Swellby home">
         <img src="assets/swellby-logo.png" alt="Swellby" />
         </a>
         <p>Stronger connections for<br />early intervention teams.</p>
@@ -127,11 +128,11 @@ export default function Footer() {
           </svg>
         </span>
         <h2>Copyright</h2>
-        <p>&copy;2026 Swellby, Inc.<br />All Rights Reserved</p>
+        <p>Copyright &copy;{currentYear} Swellby, Inc.<br />All Rights Reserved</p>
       </div>
 
       <div className="footer-badge" id="hipaa">
-         <a class="" href="https://www.accountablehq.com/" target="_blank" rel="noopener noreferrer" aria-label="Swellby home">
+         <a className="" href="https://www.accountablehq.com/" target="_blank" rel="noopener noreferrer" aria-label="Swellby home">
         <img src="assets/accountable.png" alt="HIPAA compliant, powered by Accountable" />
         </a>
       </div>
