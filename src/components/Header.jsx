@@ -63,12 +63,10 @@ export default function Header() {
               <div className="formBody trigger login-form-body">
                 <div id="login-modal-title" className="formRow fSizeXXL fColorSWBlue">Log In</div>
                 <div className="formRow login-field-row">
-                  <label className="label" htmlFor="email">* Email:</label>
-                  <input type="text" id="email" className="trigger input" placeholder="Your Email" />
+                  <input type="email" id="email" className="trigger input" placeholder="Email address" aria-label="Email address" />
                 </div>
                 <div className="formRow login-field-row">
-                  <label className="label" htmlFor="password">* Password:</label>
-                  <input type="password" id="password" className="trigger input" placeholder="********" />
+                  <input type="password" id="password" className="trigger input" placeholder="Password" aria-label="Password" />
                 </div>
                 <div className="formRow login-submit-row">
                   <a id="forgotPW" className="fSizeS" href="#">forgot password</a>
