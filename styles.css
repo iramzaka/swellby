@@ -101,17 +101,13 @@ svg {
   transition: color 160ms ease;
 }
 
-.site-nav .nav-menu-item::after {
-  display: inline-block;
+.site-nav .nav-menu-item::before {
+  display: none;
   width: 0;
   height: 0;
   flex: 0 0 auto;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  border-top: 6px solid var(--blue);
   content: "";
-  transform: translateY(1px);
-  transition: border-top-color 160ms ease, transform 160ms ease;
+  transition: border-left-color 160ms ease, transform 160ms ease;
 }
 
 .site-nav > a:not(.btn):hover,
@@ -120,10 +116,10 @@ svg {
   color: var(--blue);
 }
 
-.site-nav .nav-menu-item:hover::before,
-.site-nav .nav-menu-item:focus-visible::before {
-  border-top-color: var(--navy);
-  transform: translateY(2px);
+.site-nav .nav-menu-item:hover::after,
+.site-nav .nav-menu-item:focus-visible::after {
+  border-left-color: var(--navy);
+  transform: translateX(2px);
 }
 
 .login-trigger {
@@ -3931,6 +3927,14 @@ svg {
     width: 100%;
     min-height: 28px;
     text-align: left;
+  }
+
+  .site-nav .nav-menu-item::before {
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid var(--blue);
+    transform: translateX(0);
   }
 
   .site-nav.is-open {
